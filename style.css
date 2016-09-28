@@ -1,0 +1,31 @@
+.segment-content {
+    border-radius: 3px;
+    padding: 15px;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
+    background-color: hsl(0, 0%, 97%);
+    transition: all 0.5s;
+}
+.segment-content:hover {
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.6);
+    background-color: hsl(0, 0%, 100%);
+}
+
+.dash-segment-award > .segment-content {
+    box-shadow: none;
+    background-color: transparent;
+}
+
+a.friend_man {
+    border-radius: 1px;
+    box-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+    transition: box-shadow 0.5s;
+}
+
+a.friend_man:hover {
+    border-radius: 1px;
+    box-shadow: 1px 1px 3px rgba(0,0,0,0.6);
+}
+
+.display_name, h2 {
+    color: #36628B;
+}
