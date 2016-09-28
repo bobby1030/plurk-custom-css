@@ -28,4 +28,5 @@ a.friend_man:hover {
 
 .display_name, h2 {
     color: #36628B;
+    text-transform: uppercase;
 }
