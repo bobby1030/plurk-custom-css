@@ -1,16 +1,16 @@
-.segment-content {
+.dash-segment .segment-content {
     border-radius: 3px;
     padding: 15px;
     box-shadow: 2px 4px 5px rgba(0,0,0,0.2);
     background-color: hsl(0, 0%, 97%);
     transition: all 0.5s;
 }
-.segment-content:hover {
+.dash-segment [class="segment-content"]:hover {
     box-shadow: 2px 4px 5px rgba(0,0,0,0.6);
     background-color: hsl(0, 0%, 100%);
 }
 
-.dash-segment-award > .segment-content {
+.dash-segment-award .segment-content {
     box-shadow: none;
     background-color: transparent;
 }
