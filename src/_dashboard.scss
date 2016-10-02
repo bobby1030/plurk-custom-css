@@ -50,6 +50,16 @@
         }
     }
 
+    .dash-segment-award {
+        img {
+            transition: filter 0.5s;
+
+            &:hover {
+                filter: brightness(1.3) drop-shadow(0 0 4px $other-shadow);
+            }
+        }
+    }
+
     /* Personal Profile */
     #dash-profile {
         .display_name {
