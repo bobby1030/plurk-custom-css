@@ -2,25 +2,34 @@
  * Plurk Posts Boxes
  */
 
-#timeline_cnt {
-    .plurk_cnt {
-        background-color: $dim-bg;
-        box-shadow: 2px 4px 5px $segment-shadow;
-        transition: all 0.5s;
-
-        &:hover {
-            background-color: lighten($dim-bg, 5%);
-            box-shadow: 2px 4px 5px opacify($segment-shadow, 0.2);
+#timeline_holder {
+    .plurk {
+        /* Posts Avatar */
+        .p_img {
+            margin-right: 5px;
+            box-shadow: 1px 1px 4px opacify($segment-shadow, 0.2);
         }
 
-        /* Posts Buttons*/
-        .manager {
-            opacity: 0.3;
-            transition: opacity 0.5s;
+        /* Posts Box */
+        .plurk_cnt {
+            background-color: $dim-bg;
+            box-shadow: 2px 4px 5px $segment-shadow;
+            transition: all 0.5s;
 
             &:hover {
-                opacity: 1;
+                background-color: lighten($dim-bg, 5%);
+                box-shadow: 2px 4px 5px opacify($segment-shadow, 0.2);
+            }
+
+            /* Posts Buttons*/
+            .manager {
+                opacity: 0.3;
+                transition: opacity 0.5s;
+
+                &:hover {
+                    opacity: 1;
+                }
             }
         }
-    }    
+    }
 }
