@@ -1,0 +1,64 @@
+#plurk-dashboard {
+
+    /* Segment Boxes */
+    .dash-segment:not(.dash-segment-award){
+
+        [class="segment-content"] {
+            border-radius: 3px;
+            padding: 15px;
+            box-shadow: 2px 4px 5px $segment-shadow;
+            background-color: $dim-bg;
+            transition: all 0.5s;
+
+            &:hover {
+                box-shadow: 2px 4px 5px opacify($segment-shadow, 0.2);
+                background-color: lighten($dim-bg, 5%);
+            }
+        }
+
+        /* Segments Title */
+        h2 {
+            @extend .display_name;
+            text-transform: uppercase;
+        }
+    }
+
+    /* "Add Friend" & "Send Message" Button */
+    a.friend_man {
+        border-radius: 1px;
+        box-shadow: 1px 1px 3px $other-shadow;
+        transition: box-shadow 0.5s;
+
+        &:hover {
+            border-radius: 1px;
+            box-shadow: 1px 1px 3px opacify($other-shadow, 0.2);
+        }
+    }
+
+    /* Friend List Avatars */
+    .friend_holder {
+        li {
+            a img {
+                border-radius: 50%;
+                box-shadow: 1px 1px 3px $other-shadow;
+                transition: box-shadow 0.5s;
+
+                &:hover {
+                    box-shadow: 1px 1px 3px opacify($other-shadow, 0.2);
+                }
+            }
+        }
+    }
+
+    /* Personal Profile */
+    #dash-profile {
+        .display_name {
+            color: #36628B;
+        }
+
+        img#profile_pic.profile-pic {
+            margin: 30px inherit;
+            border-radius: 50%;
+        }
+    }
+}
