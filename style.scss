@@ -4,24 +4,34 @@
     box-shadow: 2px 4px 5px rgba(0,0,0,0.2);
     background-color: hsl(0, 0%, 97%);
     transition: all 0.5s;
-}
-.dash-segment:not(.dash-segment-award) [class="segment-content"]:hover {
-    box-shadow: 2px 4px 5px rgba(0,0,0,0.4);
-    background-color: hsl(0, 0%, 100%);
+
+    &:hover {
+        box-shadow: 2px 4px 5px rgba(0,0,0,0.4);
+        background-color: hsl(0, 0%, 100%);
+    }
 }
 
 a.friend_man {
     border-radius: 1px;
     box-shadow: 1px 1px 3px rgba(0,0,0,0.2);
     transition: box-shadow 0.5s;
-}
 
-a.friend_man:hover {
-    border-radius: 1px;
-    box-shadow: 1px 1px 3px rgba(0,0,0,0.4);
+    &:hover {
+        border-radius: 1px;
+        box-shadow: 1px 1px 3px rgba(0,0,0,0.4);
+    }
 }
 
 .display_name, h2 {
     color: #36628B;
     text-transform: uppercase;
+}
+
+.plurk_cnt {
+    background-color: hsl(0, 0%, 95%);
+    transition: background-color 0.5s;
+
+    &:hover {
+        background-color: hsl(0, 0%, 100%);
+    }
 }
