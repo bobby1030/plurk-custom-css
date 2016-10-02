@@ -6,7 +6,7 @@
     transition: all 0.5s;
 }
 .dash-segment:not(.dash-segment-award) [class="segment-content"]:hover {
-    box-shadow: 2px 4px 5px rgba(0,0,0,0.6);
+    box-shadow: 2px 4px 5px rgba(0,0,0,0.4);
     background-color: hsl(0, 0%, 100%);
 }
 
@@ -18,7 +18,7 @@ a.friend_man {
 
 a.friend_man:hover {
     border-radius: 1px;
-    box-shadow: 1px 1px 3px rgba(0,0,0,0.6);
+    box-shadow: 1px 1px 3px rgba(0,0,0,0.4);
 }
 
 .display_name, h2 {
