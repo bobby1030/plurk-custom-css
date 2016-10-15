@@ -8,7 +8,7 @@
             padding: 15px;
             box-shadow: 2px 4px 5px $segment-shadow;
             background-color: $dim-bg;
-            transition: all 0.5s;
+            transition: all 0.3s ease-in-out;
 
             &:hover {
                 box-shadow: 2px 4px 5px opacify($segment-shadow, 0.2);

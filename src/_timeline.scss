@@ -8,9 +8,10 @@
 
         /* Posts Box */
         .plurk_cnt {
+            border-radius: 5px;
             background-color: $dim-bg;
             box-shadow: 2px 4px 5px $segment-shadow;
-            transition: all 0.5s;
+            transition: all 0.3s ease-in-out;
 
             &:hover {
                 background-color: lighten($dim-bg, 5%);
@@ -19,13 +20,19 @@
 
             /* Posts Buttons*/
             .manager {
-                opacity: 0.3;
-                transition: opacity 0.5s;
+                opacity: 0.2;
+                transition: opacity 0.2s ease-out;
 
                 &:hover {
                     opacity: 1;
                 }
             }
         }
+
+
+    }
+
+    .plurk.display.plurk_box {
+        width: 230%;
     }
 }
