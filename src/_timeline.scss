@@ -36,3 +36,9 @@
         width: 230%;
     }
 }
+
+.response_box {
+    .plurk {
+        border-left: solid 2px lighten($main-color, 20%);
+    }
+}
