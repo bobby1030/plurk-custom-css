@@ -3,5 +3,6 @@ $dim-bg: hsl(0, 0%, 97%);
 $segment-shadow: rgba(0,0,0,0.2);
 $other-shadow: rgba(0,0,0,0.3);
 
+@import "./src/global";
 @import "./src/timeline";
 @import "./src/dashboard";
