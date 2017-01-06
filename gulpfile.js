@@ -15,6 +15,8 @@ gulp.task('fuckplurk', ['sass'], function(){
         .pipe(gulp.dest('./dist'));
 });
 
+gulp.task('default', ['sass', 'fuckplurk'])
+
 gulp.task('watch', function(){
-    gulp.watch(['./src/*.scss'], ['sass', 'fuckplurk']);
+    gulp.watch(['./src/*.scss'], ['default']);
 });
