@@ -1,0 +1,24 @@
+{
+  "name": "plurk-custom-css",
+  "version": "1.0.0",
+  "description": "My Plurk custom styling",
+  "main": "main.scss",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bobby1030/plurk-custom-css.git"
+  },
+  "author": "BobbyHo",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/bobby1030/plurk-custom-css/issues"
+  },
+  "homepage": "https://github.com/bobby1030/plurk-custom-css#readme",
+  "dependencies": {
+    "gulp": "^3.9.1",
+    "gulp-replace": "^0.5.4",
+    "gulp-sass": "^3.0.0"
+  }
+}
