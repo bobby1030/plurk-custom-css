@@ -1,3 +1,8 @@
 html, body {
     font-family: 'Noto Sans CJK TC', 'Souce Han Sans TC', 'Microsoft JhengHei', sans-serif;
 }
+
+/* Force disable line breaking */
+br + br {
+    display : none;
+}
