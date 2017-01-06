@@ -2,9 +2,9 @@
   "name": "plurk-custom-css",
   "version": "1.0.0",
   "description": "My Plurk custom styling",
-  "main": "main.scss",
+  "main": "src/main.scss",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "gulp default"
   },
   "repository": {
     "type": "git",
