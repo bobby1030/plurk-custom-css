@@ -18,6 +18,17 @@
                 box-shadow: 2px 4px 5px opacify($segment-shadow, 0.2);
             }
 
+            /* Pictures Preview*/
+            a.pictureservices {
+                box-shadow: 0 2px 5px rgba(0,0,0,0.16), 0 2px 5px rgba(0,0,0,0.23);
+                border-width: 0;
+                padding: 0px;
+
+                img {
+                    border-width: 0;
+                }
+            }
+
             /* Posts Buttons*/
             .manager {
                 opacity: 0.2;
