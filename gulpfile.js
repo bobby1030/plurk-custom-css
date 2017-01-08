@@ -1,6 +1,7 @@
 var gulp = require('gulp');
 var replace = require('gulp-replace');
 var sass = require('gulp-sass')
+var clipboard = require("gulp-clipboard");
 
 gulp.task('sass', function(){
     return gulp.src('./src/main.scss')
@@ -15,8 +16,13 @@ gulp.task('fuckplurk', ['sass'], function(){
         .pipe(gulp.dest('./dist'));
 });
 
+gulp.task('clip', ['default'], function(){
+    return gulp.src("./dist/main.css")
+        .pipe(clipboard())
+})
+
 gulp.task('default', ['sass', 'fuckplurk'])
 
 gulp.task('watch', function(){
-    gulp.watch(['./src/*.scss'], ['default']);
+    gulp.watch(['./src/*.scss'], ['default', 'clip']);
 });

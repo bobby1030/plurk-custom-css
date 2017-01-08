@@ -18,6 +18,7 @@
   "homepage": "https://github.com/bobby1030/plurk-custom-css#readme",
   "dependencies": {
     "gulp": "^3.9.1",
+    "gulp-clipboard": "^0.1.1",
     "gulp-replace": "^0.5.4",
     "gulp-sass": "^3.0.0"
   }
