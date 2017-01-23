@@ -39,11 +39,6 @@
                     opacity: 1;
                 }
             }
-
-            /* Qualifier */
-            .qualifier {
-                @include block($other-shadow, false)
-            }
         }
 
         opacity: 0.9;
@@ -75,3 +70,7 @@
     }
 }
 
+/* Qualifier */
+.qualifier {
+    @include block($other-shadow, false)
+}
