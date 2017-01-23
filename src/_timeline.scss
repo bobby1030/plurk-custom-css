@@ -38,6 +38,11 @@
                     opacity: 1;
                 }
             }
+
+            /* Qualifier */
+            .qualifier {
+                @include badge($other-shadow, false)
+            }
         }
 
 
@@ -53,11 +58,11 @@
     
     .response_box {
         .plurk {
-            // Vertical lines in the beginning of the replys
+            /* Vertical lines in the beginning of the replys */
             border-left: solid 2px lighten($main-color, 20%);
         }
         
-        // "Likes & Replurks" counting badge
+        /* "Likes & Replurks" counting badge */
         div[class$="_count"] {
             @include badge($other-shadow)
         }
