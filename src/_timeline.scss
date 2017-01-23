@@ -41,7 +41,7 @@
 
             /* Qualifier */
             .qualifier {
-                @include badge($other-shadow, false)
+                @include block($other-shadow, false)
             }
         }
 
@@ -64,7 +64,7 @@
         
         /* "Likes & Replurks" counting badge */
         div[class$="_count"] {
-            @include badge($other-shadow)
+            @include block($other-shadow)
         }
     }
 }

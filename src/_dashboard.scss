@@ -23,9 +23,24 @@
         }
     }
 
+    /* Input Area */
+    #main_poster {
+        .input_holder {
+            border-radius: 1px;
+        }
+
+        .qual_holder > .m_qualifier {
+            @include block($other-shadow)
+        }
+
+        .submit_img {
+            @include block($other-shadow)
+        }
+    }
+
     /* "Add Friend" & "Send Message" Button */
     a.friend_man {
-        @include badge($other-shadow)
+        @include block($other-shadow)
     }
 
     /* Friend List Avatars */
