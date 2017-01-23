@@ -4,6 +4,19 @@ $segment-shadow: rgba(0,0,0,0.16);
 $other-shadow: rgba(0,0,0,0.19);
 $transition: all 0.3s cubic-bezier(.25,.8,.25,1);
 
+@mixin badge($shadow-color, $transition-enabled: "true") {
+    border-radius: 1px;
+    box-shadow: 1px 1px 3px $shadow-color;
+
+    @if $transition-enabled == "true" {
+        transition: $transition;
+        &:hover {
+            border-radius: 1px;
+            box-shadow: 1px 1px 3px opacify($shadow-color, 0.2);
+        }
+    }    
+}
+
 @import "./src/global";
 @import "./src/timeline";
 @import "./src/dashboard";

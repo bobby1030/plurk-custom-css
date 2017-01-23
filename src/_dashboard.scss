@@ -25,14 +25,7 @@
 
     /* "Add Friend" & "Send Message" Button */
     a.friend_man {
-        border-radius: 1px;
-        box-shadow: 1px 1px 3px $other-shadow;
-        transition: $transition;
-
-        &:hover {
-            border-radius: 1px;
-            box-shadow: 1px 1px 3px opacify($other-shadow, 0.2);
-        }
+        @include badge($other-shadow)
     }
 
     /* Friend List Avatars */
