@@ -13,6 +13,7 @@ gulp.task('sass', function(){
 gulp.task('fuckplurk', ['sass'], function(){
     return gulp.src('./dist/main.css')
         .pipe(replace(/display\:/g, 'display : '))
+        .pipe(replace(/float\:/g, 'float : '))
         .pipe(gulp.dest('./dist'));
 });
 

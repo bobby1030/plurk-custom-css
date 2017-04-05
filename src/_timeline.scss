@@ -54,6 +54,36 @@
     background-position: left top;
 }
 
+#timeline_control_holder {
+    // Filter Buttons
+    ul#filter_tab {
+        li > a {
+            @include block($segment-shadow);
+        }
+    }
+    
+    // Unread Reminder Buttons
+    div#updater {
+        a {
+            @include block($segment-shadow);
+            border-radius: 1px 0px 0px 1px;
+        }
+    }
+
+    .unread_generic {
+            @include block($segment-shadow, flase);
+            border-radius: 0px 1px 1px 0px;
+            font-size: 14px;
+            font-weight: 700;
+            position: relative;
+            float: right;
+            bottom: 25px;
+            left: 28px;
+            padding: 0px;
+            width: 1.5em;
+    }
+}
+
 #form_holder {
     box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
     
